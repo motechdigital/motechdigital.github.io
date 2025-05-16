@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motech Digital - Discover Innovative Digital Solutions. </title>
+    <!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+  rel="stylesheet"
+/>
+<link rel="icon" href="img/logo.png" type="image/png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+                
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+  
+
+
+  <style>
+ 
+ @import url('https://fonts.cdnfonts.com/css/product-sans');                                                         
+                                                
+    body{
+      font-family: 'Product Sans', sans-serif;
+                                                
+                       background-color: black;                         
+       
+    }
+
+    .navbar {
+    --mdb-navbar-box-shadow: none
+    --mdb-navbar-padding-top: 0.5625rem;
+    --mdb-navbar-brand-img-margin-right: none;
+    box-shadow: none;
+    padding-top: none;
+  
+}
+
+
+.nav-link.active {
+    color: #EE364D;
+  font-weight: bold;
+  text-decoration:underline;
+ 
+  background-repeat: no-repeat;
+}
+
+
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .navbar-nav > li{
+    margin-left:8px;
+    margin-right:8px;
+  }
+
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+  .responsive-font-example {
+    font-size: 56px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-font-example {
+    font-size: 30px;
+  }
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: black;
+    color:black;
+    border-radius: 0px 12px 12px 0px;
+    border-bottom: 3px solid #EE364D;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
+   
+    border-radius:12px;
+    
+}
+
+
+
+    .responsive-heading {
+    font-weight: 800;
+    font-size: 2.5rem; /* Adjust as needed */
+  
+    color: black;
+    line-height: 1.2; /* Adjust as needed */
+}
+
+@media (max-width: 575.98px) {
+    .responsive-heading {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .responsive-heading {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsive-heading {
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+}
+
+/* Add more media queries as needed */
+
+       
+    .items{
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    .items::-webkit-scrollbar{
+        display: none;
+    } 
+    
+    .items .options{
+        min-width: 900px;
+       
+       
+        margin: 10px;
+        
+           
+        position: relative;
+    
+    }
+    
+
+
+  .bannerwall {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/bg.jpg');
+  background-size: cover;
+  background-position: right;
+  
+}
+
+.bannerwall{
+  
+  min-height: 700px;
+}
+
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #d946ef, #8b5cf6); /* bright pink to neon purple */
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+  box-shadow: 
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 30px #3333ff,
+    0 0 40px #3333ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+.glass-image {
+  padding: 8px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.4); /* Black tint with transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Optional inner border for contrast */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Depth */
+  max-width: 100%; /* Responsive */
+  display: inline-block;
+}
+
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    position: relative;
+  }
+
+  .scroll-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 60s linear infinite;
+  }
+
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* CSS for image zoom effect */
+.image-link {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.zoomable {
+    transition: transform 0.3s ease;
+    transform: scale(1); /* Normal state */
+}
+
+.zoomable:hover {
+    transform: scale(1.1); /* Zoomed state */
+}
+
+  </style>
+</head>
+<body>
+    
+  
+<div class="bannerwall">
+  
+<nav class="navbar navbar-expand-lg navbar">
+  <div class="container" >
+    <a class="navbar-brand" href="#" >
+        <img src="img/logowhite.png" class="img-fluid" width="80px">
+    </a>
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      style="background-color:white;"
+    >
+      <i class="fas fa-bars" style="color:black;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  style="  color:white; font-size:16px;" aria-current="page" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   style="  color:white; font-size:16px;" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  style="  color:white; font-size:16px;" href="#">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"  style="  color:white; font-size:16px;" href="#">Testimonials</a>
+        </li>
+
+      </ul>
+    
+
+
+       <a href="#" class="btn btn" style="background-color:white; color:black; text-transform:none;"> Contact Us </a>
+     
+    </div>
+  </div>
+</nav>
+
+
+<br>
+
+
+
+
+
+<div class="container-lg">
+
+  
+  
+  
+  <div style="margin-bottom:60px;"> </div>
+  
+  
+  <div class="row">
+  
+  <div class="col-md-8 mb-3">
+  
+  
+  <h6 style="color:white; font-size:19px;"> 
+  
+  Your Creative Hub for Digital Innovation!
+  
+  </h6>
+  
+  <div  class="responsive-heading" >
+   <h1 style="font-weight: 800; font-size:43px; letter-spacing: -1px;  color:white;"> 
+    With a decade of design and tech expertise, <strong style="color:#6C00FF;"> Motech Digital </strong> transforms ideas into <strong style="color:#EE364D;"> powerful visuals, websites, and presentations  </strong> that elevate your brand and drive results.
+   
+
+   </h1>
+<br>
+  
+
+<!-- From Uiverse.io by Creatlydev --> 
+<button href="#" class="button" style="--clr: #7808d0">
+  <span class="button__icon-wrapper">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg button__icon-svg--copy"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </span>
+  Get a Free Quote
+</button>
+
+
+      </div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <div class="col-md-4 mb-3">
+
+
+   
+  <h6 style="font-size:18px;  color:white; font-weight: bold; text-align: right;">
+ A creative agency with a rich legacy of a decade in the digital realm. 
+ We create impactful digital experiences for startups, small businesses, content creators, and growing brands. 
+      </h6>   
+
+
+      <img src="img/bannericon.png" class="img-fluid">
+  
+  </div>
+  
+  
+  </div>
+  
+  
+  
+  
+  </div>
+</div>
+
+
+<div style="margin-bottom:20px;"></div>
+
+
+<div class="container">
+ 
+<div class="scroll-container">
+  <div class="scroll-content">
+    <!-- Duplicate the list of images for seamless loop -->
+    <img src="img/hireme.png" class="img-fluid glass-img" width="140px">
+    <img src="img/Artboard2_2.png" class="img-fluid glass-img" width="140px">
+    <img src="img/swiftsendlogo.png" class="img-fluid glass-img" width="150px">
+    <img src="https://mojutoju.github.io/img/logo/sportstv.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard3.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard4.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard7_4.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard6.png" class="img-fluid glass-img" width="140px">
+    <img src="img/Artboard7.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard7_2.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard8_2.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard5.png" class="img-fluid glass-img" width="170px">
+    <img src="img/Artboard7_3.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard8.png" class="img-fluid glass-img" width="150px">
+    <img src="img/tad.png" class="img-fluid glass-img" width="150px">
+    <img src="img/logo3 trans.png" class="img-fluid glass-img" width="190px">
+    <img src="https://mojutoju.github.io/img/logo/firstwatchcafe.png" class="img-fluid glass-img" width="150px">
+
+    <!-- Duplicate again for seamless infinite scroll -->
+    <img src="img/hireme.png" class="img-fluid glass-img" width="140px">
+    <img src="img/Artboard2_2.png" class="img-fluid glass-img" width="150px">
+    <img src="img/swiftsendlogo.png" class="img-fluid glass-img" width="140px">
+    <img src="img/Artboard3.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard4.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard7_4.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard6.png" class="img-fluid glass-img" width="140px">
+    <img src="img/Artboard7.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard7_2.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard8_2.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard5.png" class="img-fluid glass-img" width="170px">
+    <img src="img/Artboard7_3.png" class="img-fluid glass-img" width="150px">
+    <img src="img/Artboard8.png" class="img-fluid glass-img" width="150px">
+    <img src="img/tad.png" class="img-fluid glass-img" width="150px">
+    <img src="https://mojutoju.github.io/img/logo/teeschow.png" class="img-fluid glass-img" width="150px">
+    <img src="img/logo3 trans.png" class="img-fluid glass-img" width="190px">
+  </div>
+</div>
+</div>
+
+<div style="margin-bottom:30px;"></div>
+
+
+<div class="container">
+  
+<div class="headingthree">
+
+  <h2 style="color:white; font-size:54px;"> <strong style="color:#8b5cf6;"> Results </strong> that speak for themselves </h2>
+  <p style="color:white; font-size:22px;">
+    Motech Digital is a forward-thinking creative agency based in the <strong style="color:#ff00cc;"> United Kingdom, </strong> driven by a global vision. We help ambitious brands around the world stand out through impactful branding, engaging digital designs, and tailored web solutions.
+    Whether you're a startup, content creator, or growing business, we partner with you to bring your ideas to life and connect meaningfully with your audience.
+
+  </p>
+</div>
+
+<div style="margin-bottom:30px;"></div>
+
+  
+<div class="row">
+
+  <div class="col-md-4 mb-3">
+
+<div class="stickytext"  style="position: sticky; top: 50px; z-index: 10;">
+  <div style="margin-bottom:90px;"></div>
+    <h1 style="color:white; font-size:59px;"> <strong style="color:#EE364D;">  Branding </strong> & Identity </h1>
+    <p style="color: white; font-size:18px;">We design complete visual identities that make your brand instantly recognizable — from logos and colour palettes to business cards, mockups, and brand guidelines.</p>
+
+  </div>
+
+  </div>
+
+
+  <div class="col-md-8 mb-3">
+
+   
+
+  
+
+    <a href="#" class="image-link" target="_blank">
+    <img src="img/citibank.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+    <br> <br>
+     <h3 style="color:WHITE;"> Citi Bank </h3>
+     <p style="color:WHITE; font-size: 18px;""> Financial Institute Brand </p>
+
+     <div style="margin-top:80px"></div>
+
+    <a href="#" class="image-link" target="_blank">
+    <img src="img/swiftsend.jpg" class="img-fluid zoomable" style="border-radius:30px;"> </a>
+   <br> <br>
+    <h3 style="color:WHITE;"> SwiftSend </h3>
+    <p style="color:WHITE; font-size: 18px;"> Logistics Company </p>
+
+    <div style="margin-top:80px"></div>
+
+    <a href="#" class="image-link" target="_blank">
+      <img src="img/detonxyl.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+      <br> <br>
+       <h2 style="color:WHITE;"> Dentoxyl </h2>
+       <p style="color:WHITE; font-size: 18px;"> Dental Health Company</p>
+
+       <div style="margin-top:80px"></div>
+
+
+    <a href="#" class="image-link" target="_blank">
+    <img src="img/Artboard1.png" class="img-fluid zoomable" style="border-radius:30px;"> </a>
+   <br> <br>
+    <h3 style="color:WHITE;"> HCF (Happiness Is A Color Foundation) </h3>
+    <p style="color:WHITE; font-size: 18px;"> Non-Profit Oganisation </p>
+
+
+   
+     <div style="margin-top:80px"></div>
+
+
+     
+    <a href="#" class="image-link" target="_blank">
+      <img src="img/eggcount.png" class="img-fluid zoomable" style="border-radius:30px;"> </a>
+     <br> <br>
+      <h3 style="color:WHITE;"> EggCount </h3>
+      <p style="color:WHITE; font-size: 18px;"> A Egg Timer App Brand </p>
+  
+  
+     
+       <div style="margin-top:80px"></div>
+
+    
+    <a href="#" class="image-link" target="_blank">
+    <img src="img/9.jpg" class="img-fluid zoomable" style="border-radius:30px;"> </a>
+   <br> <br>
+    <h3 style="color:WHITE;"> Okeya-Ipo Diaspora Organisation</h3>
+    <p style="color:WHITE; font-size: 18px;"> Agriculture Brand </p>
+
+
+
+   
+     <div style="margin-top:80px"></div>
+
+     <a href="#" class="image-link" target="_blank">
+     <img src="img/1.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+     <br> <br>
+      <h3 style="color:WHITE;"> Chop Big </h3>
+      <p style="color:WHITE; font-size: 18px;"> Mobile Game Brand</p>
+
+
+
+      <div style="margin-top:80px"></div>
+
+     <a href="#" class="image-link" target="_blank">
+     <img src="img/6.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+     <br> <br>
+      <h3 style="color:WHITE;"> Xoxo Scents </h3>
+      <p style="color:WHITE; font-size: 18px;""> Luxurious Perfume Brand </p>
+
+
+</div>
+</div>
+
+
+<div style="margin-bottom:30px;"></div>
+
+  
+<div class="row">
+
+  <div class="col-md-4 mb-3">
+
+<div class="stickytext"  style="position: sticky; top: 50px; z-index: 10;">
+  <div style="margin-bottom:90px;"></div>
+    <h1 style="color:white; font-size:59px;"> <strong style="color:#6736ee;">  Social Media </strong> Post Designs </h1>
+    <p style="color: white; font-size:18px;">Stand out online with eye-catching, professionally designed posts, carousels, story templates, and highlight covers — tailored for platforms like Instagram, Facebook, and LinkedIn.
+      We design. You post.</p>
+
+  </div>
+
+  </div>
+
+
+  <div class="col-md-8 mb-3">
+
+   
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="img/socialmedia/1.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="img/socialmedia/2.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="img/socialmedia/3.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="https://mojutoju.github.io/img/socialmedia/5.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="https://mojutoju.github.io/img/socialmedia/9.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+  
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="https://mojutoju.github.io/img/socialmedia/6.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+   
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="https://mojutoju.github.io/img/socialmedia/4.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+
+   
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="https://mojutoju.github.io/img/socialmedia/7.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+
+   
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="https://mojutoju.github.io/img/socialmedia/8.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <a href="#" class="image-link" target="_blank">
+      <img src="IMG/socialmedia/dday6.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+  </div>
+
+
+
+</div>
+
+  
+</div>
+</div>
+
+
+
+<div style="margin-bottom:30px;"></div>
+
+  
+<div class="row">
+
+  <div class="col-md-4 mb-3">
+
+<div class="stickytext"  style="position: sticky; top: 50px; z-index: 10;">
+  <div style="margin-bottom:90px;"></div>
+    <h1 style="color:white; font-size:59px;"> <strong style="color:mediumblue;"> Web Design  </strong> & Development </h1>
+    <p style="color: white; font-size:18px;">Get a modern, mobile-friendly website that’s built to impress and convert — whether it’s a portfolio, business site, or landing page.</p>
+
+  </div>
+
+  </div>
+
+
+  <div class="col-md-8 mb-3">
+
+   
+
+    <a href="https://mojutoju.github.io/swiftsend" class="image-link" target="_blank">
+      <img src="https://toritsejumoju.github.io/webmockups/swiftsend.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+      <br> <br>
+       <h3 style="color:WHITE;"> Swift Send </h3>
+       <p style="color:WHITE;"> Logistics Company </p>
+
+       <div style="margin-top:80px"></div>
+
+
+    <a href="https://mojutoju.github.io/b2bai" class="image-link" target="_blank">
+    <img src="https://toritsejumoju.github.io/webmockups/b2bai.jpg" class="img-fluid zoomable" style="border-radius:30px;"> </a>
+   <br> <br>
+    <h3 style="color:WHITE;"> B2B AI </h3>
+    <p style="color:WHITE;"> Artificial Intelligence Solution to aid companies in hiring and utilizing ai agents to automate their operations </p>
+
+
+   
+     <div style="margin-top:80px"></div>
+
+    
+    <a href="https://github.com/mojutoju/noronmarque" class="image-link" target="_blank">
+    <img src="https://toritsejumoju.github.io/webmockups/nm2.jpg" class="img-fluid zoomable" style="border-radius:30px;"> </a>
+   <br> <br>
+    <h3 style="color:WHITE;"> Noron Marque </h3>
+    <p style="color:WHITE;"> A Business Consulting Solution </p>
+
+
+
+   
+     <div style="margin-top:80px"></div>
+
+     <a href="https://safeears.github.io/" class="image-link" target="_blank">
+     <img src="https://toritsejumoju.github.io/webmockups/safeears.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+     <br> <br>
+      <h3 style="color:WHITE;"> Safe Ears </h3>
+      <p style="color:WHITE;"> Non-Profit Organisation </p>
+
+
+
+      <div style="margin-top:80px"></div>
+
+     <a href="https://mojutoju.github.io/transitionextreme" class="image-link" target="_blank">
+     <img src="https://toritsejumoju.github.io/webmockups/transitionextreme.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+     <br> <br>
+      <h3 style="color:WHITE;"> Transition Extreme </h3>
+      <p style="color:WHITE;"> Non-Profit Sports Organisation </p>
+
+
+      <div style="margin-top:80px"></div>
+
+     <a href="https://mojutoju.github.io/demonslayer" class="image-link" target="_blank">
+     <img src="https://toritsejumoju.github.io/webmockups/demonslayer.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+     <br> <br>
+      <h3 style="color:WHITE;"> Demon Slayer </h3>
+      <p style="color:WHITE;"> Anime Entertainment Company </p>
+
+
+      <div style="margin-top:80px"></div>
+
+      <a href="https://github.com/mojutoju/sleekmek.com" class="image-link" target="_blank">
+      <img src="https://toritsejumoju.github.io/webmockups/sleekmek.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+      <br> <br>
+       <h3 style="color:WHITE;"> SleekMek </h3>
+       <p style="color:WHITE;"> Construction Company </p>
+
+       
+      <div style="margin-top:80px"></div>
+
+      <a href="https://orthodonticdental.ng/" class="image-link" target="_blank">
+        <img src="https://toritsejumoju.github.io/webmockups/orthodonticdental.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+        <br> <br>
+         <h3 style="color:WHITE;"> Orthodontic Dental Enterprise </h3>
+         <p style="color:WHITE;"> E-Commerce Company </p>
+
+
+          
+      <div style="margin-top:80px"></div>
+
+      <a href="https://projectsmileng.org" class="image-link" target="_blank">
+        <img src="https://toritsejumoju.github.io/webmockups/projectsmile.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+        <br> <br>
+         <h3 style="color:WHITE;"> Project Smile </h3>
+         <p style="color:WHITE;"> CSR Non-Profit Organisation </p>
+
+
+         <div style="margin-top:80px"></div>
+
+         <a href="https://hope4realmusic.com/" class="image-link" target="_blank">
+           <img src="https://toritsejumoju.github.io/webmockups/h4rstudios.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
+           <br> <br>
+            <h3 style="color:WHITE;"> H4R Studios & Sound </h3>
+            <p style="color:WHITE;"> Music Record Label </p>
+
+
+
+  
+
+</div>
+</div>
+
+
+
+</div>
+
+<script>
+const navLinks = document.querySelectorAll(".nav-link");
+
+for (const navLink of navLinks) {
+  navLink.addEventListener("mouseover", function() {
+    navLink.classList.add("active");
+  });
+
+  navLink.addEventListener("mouseout", function() {
+    navLink.classList.remove("active");
+  });
+}
+
+</script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+></script>
+</body>
+</html>
