@@ -274,6 +274,79 @@
     transform: scale(1.1); /* Zoomed state */
 }
 
+.testimonial-card {
+  background-color: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.4s ease-in-out, transform 0.3s ease;
+      color:white;
+    }
+
+    .testimonial-card:hover {
+      box-shadow: 0 0 15px rgb(89, 0, 255), 0 0 25px rgb(197, 0, 247);
+      transform: translateY(-5px);
+    }
+
+
+
+    .testimonial-name {
+      font-weight: bold;
+      color:greenyellow;
+    }
+    .testimonial-role {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+
+    
+    .ceo-section {
+  
+     
+    
+      padding: 2rem;
+  
+    }
+
+
+    .ceo-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      border: 2px solid rgb(111, 0, 255);
+    }
+
+    .ceo-name {
+      font-weight: bold;
+      font-size: 1.75rem;
+      color: #f8f9fa;
+    }
+
+    .ceo-title {
+      font-style: italic;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .ceo-description {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    .ceo-links a {
+      color: rgb(98, 0, 255);
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    .ceo-links a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
@@ -301,24 +374,24 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active"  style="  color:white; font-size:16px;" aria-current="page" href="#">About Us</a>
+          <a class="nav-link active"  style="  color:white; font-size:16px;" aria-current="page" href="#aboutus">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"   style="  color:white; font-size:16px;" href="#">Services</a>
+          <a class="nav-link"   style="  color:white; font-size:16px;" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  style="  color:white; font-size:16px;" href="#">Portfolio</a>
+          <a class="nav-link"  style="  color:white; font-size:16px;" href="#services">Portfolio</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"  style="  color:white; font-size:16px;" href="#">Testimonials</a>
+          <a class="nav-link"  style="  color:white; font-size:16px;" href="#testimonials">Testimonials</a>
         </li>
 
       </ul>
     
 
 
-       <a href="#" class="btn btn" style="background-color:white; color:black; text-transform:none;"> Contact Us </a>
+       <a href="#contactus" class="btn btn" style="background-color:white; color:black; text-transform:none;"> Contact Us </a>
      
     </div>
   </div>
@@ -339,7 +412,7 @@
   <div style="margin-bottom:60px;"> </div>
   
   
-  <div class="row">
+  <div class="row" id="aboutus">
   
   <div class="col-md-8 mb-3">
   
@@ -360,7 +433,7 @@
   
 
 <!-- From Uiverse.io by Creatlydev --> 
-<button href="#" class="button" style="--clr: #7808d0">
+<button  class="button" style="--clr: #7808d0">
   <span class="button__icon-wrapper">
     <svg
       viewBox="0 0 14 15"
@@ -388,7 +461,7 @@
       ></path>
     </svg>
   </span>
-  Get a Free Quote
+  <a style="text-decoration: none; color: white;" target="_blank" href="https://wa.me/447769382796" > Get a Free Quote </a>
 </button>
 
 
@@ -424,12 +497,13 @@
 </div>
 
 
-<div style="margin-bottom:20px;"></div>
+<div style="margin-bottom:40px;"></div>
 
 
 <div class="container">
- 
+
 <div class="scroll-container">
+  <p style="color:white; font-size:15px; text-align: center;"> <strong style="color:#ff7300; letter-spacing: 6px;"> OUR PARTNERS </strong>  </p>
   <div class="scroll-content">
     <!-- Duplicate the list of images for seamless loop -->
     <img src="img/hireme.png" class="img-fluid glass-img" width="140px">
@@ -471,11 +545,12 @@
 </div>
 </div>
 
-<div style="margin-bottom:30px;"></div>
+<div style="margin-bottom:40px;"></div>
 
 
 <div class="container">
   
+  <p style="color:white; font-size:15px;"> <strong style="color:#ffffff; letter-spacing: 3px;"> OUR SERVICES & <STRONG style="color:#ffee00"> PORTFOLIO </STRONG> </strong>  </p>
 <div class="headingthree">
 
   <h2 style="color:white; font-size:54px;"> <strong style="color:#8b5cf6;"> Results </strong> that speak for themselves </h2>
@@ -486,10 +561,10 @@
   </p>
 </div>
 
-<div style="margin-bottom:30px;"></div>
+<div style="margin-bottom:20px;"></div>
 
   
-<div class="row">
+<div class="row" id="services">
 
   <div class="col-md-4 mb-3">
 
@@ -497,6 +572,43 @@
   <div style="margin-bottom:90px;"></div>
     <h1 style="color:white; font-size:59px;"> <strong style="color:#EE364D;">  Branding </strong> & Identity </h1>
     <p style="color: white; font-size:18px;">We design complete visual identities that make your brand instantly recognizable — from logos and colour palettes to business cards, mockups, and brand guidelines.</p>
+
+
+    <br>
+
+    
+<!-- From Uiverse.io by Creatlydev --> 
+<button  class="button" style="--clr: #7808d0">
+  <span class="button__icon-wrapper">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg button__icon-svg--copy"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </span>
+  <a style="text-decoration: none; color: white;" target="_blank" href="https://drive.google.com/file/d/1DfPut3KBk8Am5NeQtLsFoHlRPkXuV8yf/view?usp=sharing" > View Ratecard</a>
+</button>
+
 
   </div>
 
@@ -602,6 +714,44 @@
     <p style="color: white; font-size:18px;">Stand out online with eye-catching, professionally designed posts, carousels, story templates, and highlight covers — tailored for platforms like Instagram, Facebook, and LinkedIn.
       We design. You post.</p>
 
+
+      
+    <br>
+
+    
+    <!-- From Uiverse.io by Creatlydev --> 
+    <button  class="button" style="--clr: #7808d0">
+      <span class="button__icon-wrapper">
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="button__icon-svg"
+          width="10"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+    
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+          class="button__icon-svg button__icon-svg--copy"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </span>
+      <a style="text-decoration: none; color: white;" target="_blank" href="https://drive.google.com/file/d/1DfPut3KBk8Am5NeQtLsFoHlRPkXuV8yf/view?usp=sharing" > View Ratecard</a>
+    </button>
+
+    
   </div>
 
   </div>
@@ -666,7 +816,7 @@
 
   <div class="col-md-6 mb-3">
     <a href="#" class="image-link" target="_blank">
-      <img src="img/socialmedia/dday6.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
+      <img src="IMG/socialmedia/4.jpg" class="img-fluid zoomable" style="border-radius:10px;"> </a>
   </div>
 
 
@@ -690,6 +840,44 @@
   <div style="margin-bottom:90px;"></div>
     <h1 style="color:white; font-size:59px;"> <strong style="color:mediumblue;"> Web Design  </strong> & Development </h1>
     <p style="color: white; font-size:18px;">Get a modern, mobile-friendly website that’s built to impress and convert — whether it’s a portfolio, business site, or landing page.</p>
+
+    
+    <br>
+
+    
+<!-- From Uiverse.io by Creatlydev --> 
+<button  class="button" style="--clr: #7808d0">
+  <span class="button__icon-wrapper">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg button__icon-svg--copy"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </span>
+  <a style="text-decoration: none; color: white;" target="_blank" href="https://drive.google.com/file/d/1Zg2qAwXR-aa1TIMLdpfca1IYIRLx5Mst/view?usp=sharing" > View Ratecard</a>
+</button>
+
+
 
   </div>
 
@@ -815,6 +1003,45 @@
 
     </p>
 
+     
+    <br>
+
+    
+<!-- From Uiverse.io by Creatlydev --> 
+<button  class="button" style="--clr: #7808d0">
+  <span class="button__icon-wrapper">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg button__icon-svg--copy"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </span>
+  <a style="text-decoration: none; color: white;" target="_blank" href="https://drive.google.com/file/d/1pXXURjaCaT2tuF8prM8LQvK2iRC6Du67/view?usp=sharing" > View Ratecard</a>
+</button>
+
+
+
+
   </div>
 
   </div>
@@ -900,6 +1127,45 @@
 
     </p>
 
+    
+    <br>
+
+    
+<!-- From Uiverse.io by Creatlydev --> 
+<button  class="button" style="--clr: #7808d0">
+  <span class="button__icon-wrapper">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg"
+      width="10"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="10"
+      xmlns="http://www.w3.org/2000/svg"
+      class="button__icon-svg button__icon-svg--copy"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </span>
+  <a style="text-decoration: none; color: white;" target="_blank" href="https://drive.google.com/file/d/1IPvwDE75NU8HaOnHDdLZeqTzCcZEgfH2/view?usp=sharing" > View Ratecard</a>
+</button>
+
+
+
+
   </div>
 
   </div>
@@ -910,7 +1176,7 @@
     <a href="https://docs.google.com/presentation/d/1o8O_eGg3ucO9x4owsDSx0EfJgJWWAgXy/edit?usp=sharing&ouid=113218724923389978587&rtpof=true&sd=true" class="image-link" target="_blank">
       <img src="img/SAFEWORKPLACE.jpg" class="img-fluid zoomable" style="border-radius:30px;">  </a>
       <br> <br>
-       <h3 style="color:WHITE;"> Safe WorkPlace Investment Pitch Desk</h3>
+       <h3 style="color:WHITE;"> Safe WorkPlace Investment Pitch Deck</h3>
        <p style="color:WHITE;"> HRTech Company </p>
 
        <div style="margin-top:30px"></div>
@@ -954,7 +1220,245 @@
 </div>
 
 
+<hr style="color:white; background-color:white;">
+
+<div style="margin-bottom:25px;"></div>
+<div class="row">
+  
+  <div class="col-md-6 mb-3">
+
+    <div class="stickytext"  style="position: sticky; top: 50px; z-index: 10;">
+      <h1 style="color:white;"> RECENT DATA ANALYST PROJECTS </h1>
+      <h4 style="color:rgb(255, 217, 0);"> 2023 - 2025 </h4>
+  
+      <p style="color:white; text-align: justify; font-size: 20px;">
+        At Motech Digital, our mission is rooted in a commitment to excellence, innovation, and user-centered design. <br><br>
+        Our solutions are crafted to enhance user engagement, accelerate business growth, and deliver measurable value to our clients. This dedication has made Motech Digital a trusted partner for organizations seeking to harness data and technology for strategic advantage. <br><br>
+        With a dynamic, multidisciplinary team and an ever-evolving skill set, we consistently meet the challenges of the digital age. Our impact spans industries—combining creativity, technical expertise, and actionable insights to build solutions that not only solve problems but also elevate brands and inspire users.
+      </p>
+      
+      <br>
+
+      </div>
+
+      </div>
+
+      <div class="col-md-6 mb-3">
+
+        <h4 style="color:orange;"> Using Data Analysis to build an effective pricing strategy </h4>
+        <p style="color:white; font-size:14px;"> This project leverages advanced data analytics to develop effective pricing strategies aimed at enhancing revenue generation and market penetration in the retail sector. </p>
+     
+
+
+
+      <a class="btn btn-lg" target="_blank" href="https://github.com/mojutoju/Using-Data-Analysis-to-build-an-effective-pricing-strategy" style="color: #182B27; background-color:#BEE988; border-radius:20px; "  > Learn More </a>
+    
+    
+      <hr style="color:white; background-color:white;">
+
+      <h4 style="color:orange;"> Insightful Journeys Analyzing Travel Trends and Flight Dynamics
+      </h4>
+      <p style="color:white; font-size:14px;"> This project performs an extensive analysis of travel details and flight data. The aim is to uncover insights from these datasets and visualize the findings through various plots. </p>
+
+
+    <a class="btn btn-lg" target="_blank" href="https://github.com/mojutoju/Insightful-Journeys-Analyzing-Travel-Trends-and-Flight-Dynamics" style="color: #182B27; background-color:#BEE988; border-radius:20px; "  > Learn More </a>
+  
+  
+    <hr style="color:white; background-color:white;">
+
+    
+    <h4 style="color:orange;"> Churn Prediction for Subscription Services: Improving Customer Retention
+    </h4>
+
+    <p style="color:white; font-size:14px;">  This project focuses on churn prediction in a fictional business context. Churn, in this context, refers to the scenario where customers discontinue their subscription or service.  </p>
+
+
+  <a class="btn btn-lg" href="https://github.com/mojutoju/churnprediction" target="_blank" style="color: #182B27; background-color:#BEE988; border-radius:20px; "  > Learn More </a>
+
+
+
+    </div>
+
+
 </div>
+
+
+<hr style="color:white; background-color:white;">
+<div style="margin-bottom:45px;"></div>
+
+
+<div class="container">
+  
+<div class="headingthree" id="testimonials">
+
+  <p style="color:white; font-size:15px;"> <strong style="color:#ffffff; letter-spacing: 3px;"> TESTIMONIALS </strong>  </p>
+  <p style="color:white; font-size:52px; line-height: 62px; letter-spacing: -1px;">
+  Don't take our word for it! <br>
+  Hear it from our <strong style="color:#EE364D">  clients and partners </strong>
+
+  </p>
+
+</div>
+<div style="margin-bottom:45px;"></div>
+
+<div class="testimonial-card">
+  <p>“Motech Digital is a powerhouse of creativity and versatility. Their team is deeply skilled in product design, web development, motion graphics, and illustration. Collaborating with them has elevated the quality of our projects and strengthened our design strategies.”</p>
+  <div class="testimonial-name">Oluwafemi Oluwatoba</div>
+  <div class="testimonial-role">Product Designer</div>
+</div>
+
+<div class="testimonial-card">
+  <p>“Working with Motech Digital has been a pleasure. Their UI/UX expertise and attention to detail are top-notch. Every project was delivered on time with precision and professionalism. They’re our go-to team for anything design-related.”</p>
+  <div class="testimonial-name">Pureheart Gharoro</div>
+  <div class="testimonial-role">Senior Software Engineer</div>
+</div>
+
+<div class="testimonial-card">
+  <p>“The Motech Digital team is focused, reliable, and driven. They bring solid design thinking into every solution and are consistent in delivering value.”</p>
+  <div class="testimonial-name">Ekene Oshai</div>
+  <div class="testimonial-role">UI/UX Designer</div>
+</div>
+
+<div class="testimonial-card">
+  <p>“Since 2019, Motech Digital has been instrumental in shaping the visual identity of Onecloudatatime Adventures. Their graphic design work has consistently impressed and directly contributed to our marketing success and brand recognition. They truly understand how to communicate a brand’s story visually.”</p>
+  <div class="testimonial-name">Bernard Favour</div>
+  <div class="testimonial-role">CEO, OCAT Adventures</div>
+</div>
+
+<div class="testimonial-card">
+  <p>“Motech Digital continues to exceed expectations. Their ability to blend technical precision with creative design is rare. Every deliverable reflects their dedication to quality and user experience. Highly recommend them for any project requiring elite UI/UX and frontend capabilities.”</p>
+  <div class="testimonial-name">Precious Austine-Ushie</div>
+  <div class="testimonial-role">Creative Consultant</div>
+</div>
+
+<div class="testimonial-card">
+  <p>“Motech Digital brought my brand to life visually. Their flyer and digital assets for April’s Kulture perfectly captured our essence—elegant, Afrocentric, and modern. Their creativity and professionalism are unmatched, and they’ve played a vital role in our brand growth.”</p>
+  <div class="testimonial-name">Enobong Andu</div>
+  <div class="testimonial-role">CEO, April’s Kulture</div>
+</div>
+
+</div>
+
+
+<div class="container py-5">
+  <p class="text-center" style="color:white; font-size:35px;"> <strong style="color:#ffffff; letter-spacing: 3px;"> MEET OUR <STRONG style="color:#ffee00"> CEO </STRONG> </strong>  </p>
+
+  <div class="ceo-section">
+    <div class="row align-items-center">
+      <div class="col-md-5 mb-3 text-center">
+        <img src="img/ceo.jpg" alt="Toritseju Samson Moju" class="ceo-image">
+      </div>
+      <div class="col-md-7 mb-3">
+        <div class="ceo-name">Toritseju Samson Moju</div>
+        <div class="ceo-title" style="color:#6736ee;">Founder & CEO, Motech Digital</div>
+        <p class="ceo-description">
+          Toritseju is a seasoned digital innovator with over a decade of experience in UI/UX design, frontend development, and data analytics.
+          Holding an MSc in Data Analytics for Business Intelligence from the University of Leicester, he has led numerous projects that bridge the
+          gap between user-centered design and functional development.
+        </p>
+        <p class="ceo-description">
+          As a Senior Graphic Designer, UI/UX Specialist, and Creative Visionary, Toritseju has worked on impactful projects across diverse industries—delivering compelling
+          brand identities, immersive digital experiences, and accessible, intuitive interfaces. His command of tools such as Figma, Adobe Creative Suite,
+          and modern web frameworks empowers him to deliver both aesthetic excellence and strategic results.
+        </p>
+        <p class="ceo-description">
+          Under his leadership, Motech Digital has become a trusted partner for businesses seeking innovative, scalable, and visually exceptional digital solutions.
+        </p>
+        <div class="ceo-links mt-3">
+          <a href="https://mojutoju.github.io/" target="_blank">Portfolio</a>
+          <a href="https://github.com/mojutoju" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/mojutoju/" target="_blank">LinkedIn</a>
+          <a href="https://dribbble.com/mojutoju" target="_blank">Dribbble</a>
+          <a href="https://figma.com/@mojutoju" target="_blank">Figma Community</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<hr style="color:white; background-color:white;">
+
+
+</div>
+
+
+
+
+<div class="container" id="contactus">
+  <center> <img src="img/logowhite.png" class="img-fluid" width="130px"> </center>
+  <br>
+  
+      <h1 style="color:white; text-align:center;"> LET'S WORK TOGETHER </h1>
+  
+      <center>  <a class="btn btn-lg" href="mailto:toritsejumoju@gmail.com" target="_blank" style=" padding: 30px; color: #839e98; border:3px solid #7aa79d; border-radius:80px; text-transform: none; width: auto;"   > toritsejumoju@gmail.com </a>
+  </center>
+  
+  
+  <footer class="bg text-center text-white" id="contact" >
+  <div style="margin-bottom: 30px;"></div>
+          <p style="color: white; text-align:center;"> Connect with me via social media links </p>
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://web.facebook.com/tojumoju" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+  
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.twitter.com/itss_toju" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+  
+  
+  
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/thatdigital_guy" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+  
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/mojutoju" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+  
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.github.com/mojutoju" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+  
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.behance.net/mojutojusamson" role="button"
+              ><i class="fab fa-behance"></i
+            ></a>
+  
+          
+  
+  
+                      <!-- Github -->
+                      <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="mailto:benmoju@gmail.com" role="button"
+                        ><i class="fab fa-google"></i
+                      ></a>
+  
+                      
+                      <!-- Github -->
+                      <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://youtube.com/@tmcreatives" role="button"
+                        ><i class="fab fa-youtube"></i
+                      ></a>
+  
+          </section>
+          <!-- Section: Social media -->
+  
+  
+  
+ 
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2025 Copyright:
+          <a class="text-white" href="index.html">MotechDigital | Website Designed By Toritseju Samson Moju </a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <hr style="color:white; background-color:white;">
 
 <script>
 const navLinks = document.querySelectorAll(".nav-link");
